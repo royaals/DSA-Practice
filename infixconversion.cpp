@@ -60,7 +60,7 @@ int main()
             oper.pop();//'('
         }
         else if(ch=='+' || ch=='-'|| ch=='*' || ch=='/'){
-            while(oper.size()!=0 && oper.top()!='c' && precedence(ch)<=precedence(oper.top())){
+            while(oper.size()!=0 && oper.top()!='(' && precedence(ch)<=precedence(oper.top())){
                 char opt=oper.top();
                 oper.pop();
                 string p1=prefix.top();
