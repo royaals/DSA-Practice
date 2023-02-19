@@ -33,7 +33,7 @@ public:
 };
 
 int main(){
-
+  Solution s;
    int choice;
    vector<int> v;
    vector<vector<int>> ans;
@@ -55,7 +55,7 @@ int main(){
     }
 
    }
-   ans=threesum(v);
+   ans=s.threeSum(v);
    for(int i=0;i<ans.size();i++){
     for(int j=0;j<ans[i].size();j++){
         
